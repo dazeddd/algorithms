@@ -12,13 +12,13 @@ def solution(scoville, K):
     
     loop_cnt = len(scoville)-1
     
-    for i in range(loop_cnt):
+    for _ in range(loop_cnt):
         next_value = heappop(scoville)
         
         mixed_value = min_value + next_value * 2
         mixed_cnt += 1
 
-        print(mixed_value)
+        # print(mixed_value)
 
         if mixed_value >= K:
             return mixed_cnt
@@ -30,4 +30,4 @@ def solution(scoville, K):
         
 if __name__ == "__main__":
     cnt = solution([1, 2, 3, 9, 10, 12], 7)
-    # print(cnt)
+    print(cnt)
