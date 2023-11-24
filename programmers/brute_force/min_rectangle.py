@@ -2,22 +2,22 @@
 
 def solution(sizes):
 
-    width_range = []
-    height_range = []
+    width = 0
+    height = 0
 
-    # for idx, size in enumerate(sizes):
-        # if abs(sizes[idx][0] - sizes[idx+1][0]) > abs(sizes[idx][0] - sizes[idx+1][1]):            
-    # for idx in range(len(sizes)-1):
-    #     abs(sizes[idx][0] - sizes[idx+1][0])
-    #     abs(sizes[idx][1] - sizes[idx+1][1])
-    #     abs(sizes[idx][0] - sizes[idx+1][1])
-    #     abs(sizes[idx][1] - sizes[idx+1][0])
+    for w, h in sizes:
+        # print(w, h)
+        if w < h:
+            w, h = h, w
+        width = max(width, w)
+        height = max(height, h)
             
-    answer = 0
+    answer = width * height
     return answer
 
 if __name__ == "__main__":
     answer = solution(sizes=[[60, 50], [30, 70], [60, 30], [80, 40]])
+    print(answer)
 
 [[60, 50], 
  [30, 70],
