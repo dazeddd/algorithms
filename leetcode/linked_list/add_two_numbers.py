@@ -14,28 +14,28 @@ class Solution:
         # l1_values = []
         # l2_values = []
 
-        l1_value = 0
-        l1_exponent = 0
+        # l1_value = 0
+        # l1_exponent = 0
         
-        l2_value = 0
-        l2_exponent = 0
+        # l2_value = 0
+        # l2_exponent = 0
 
-        while l1 is not None:
-            # l1_values.append(l1.val)
-            l1_value += l1.val * pow(10, l1_exponent)
-            l1_exponent += 1
+        # while l1 is not None:
+        #     # l1_values.append(l1.val)
+        #     l1_value += l1.val * pow(10, l1_exponent)
+        #     l1_exponent += 1
 
-            l1 = l1.next
+        #     l1 = l1.next
         
-        while l2 is not None:
-            # l2_values.append(l2.val)
-            l2_value += l2.val * pow(10, l2_exponent)
-            l2_exponent += 1
+        # while l2 is not None:
+        #     # l2_values.append(l2.val)
+        #     l2_value += l2.val * pow(10, l2_exponent)
+        #     l2_exponent += 1
             
-            l2 = l2.next
+        #     l2 = l2.next
         
-        answer = l1_value + l2_value
-        return answer
+        # answer = l1_value + l2_value
+        # return answer
 
 if __name__ == "__main__":
     sol = Solution()

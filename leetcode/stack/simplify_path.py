@@ -1,34 +1,36 @@
 class Solution:
     def simplifyPath(self, path: str) -> str:
 
-        canonical_path = ''
-        # dir_stack = []
-
+        element_stack = []
         elements = path.split('/')
         # print(elements)
         for idx, e in enumerate(elements):
 
-            if e and e != '.':
-                canonical_path += '/'
-                canonical_path += e
-            elif e == '.':
-                continue
-        
-        
+            if e == '..':
+                if element_stack:
+                    element_stack.pop()
 
+            elif e and e != '.':
 
+                element_stack.append(e)
+                # canonical_path += '/'
+                # canonical_path += e
+            else:
+                continue        
+            
+        canonical_path = '/' + '/'.join(element_stack)
 
-        print(canonical_path)
-        
+        # print(element_stack)
+        # print(canonical_path)
 
-        return 
+        return canonical_path
     
 if __name__ == "__main__":
 
     sol = Solution()
     sol.simplifyPath(path='/home/')
     sol.simplifyPath(path='/../')
-    # sol.simplifyPath(path='/home//foo/')
+    sol.simplifyPath(path='/home//foo/')
     sol.simplifyPath(path='/home//../')
 
 # Example 1:
