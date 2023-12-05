@@ -9,13 +9,13 @@ class ListNode:
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
 
-        nodex_passed = set()
+        nodes_passed = set()
 
         while head is not None:
 
-            if head in nodex_passed:
+            if head in nodes_passed:
                 return True
-            nodex_passed.add(head)
+            nodes_passed.add(head)
             head = head.next # 다음 노드로 이동
         return False
 
