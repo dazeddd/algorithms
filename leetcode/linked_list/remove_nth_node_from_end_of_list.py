@@ -24,6 +24,7 @@ class Solution:
             length -= 1
             first = first.next
 
+        # remove nth node
         first.next = first.next.next
 
         return dummy.next
