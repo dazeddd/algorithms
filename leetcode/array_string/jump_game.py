@@ -3,7 +3,12 @@ from typing import List
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
 
-        len(nums) - 1
+        target = len(nums) - 1
+
+        moved_index_sum = 0
+
+        if moved_index_sum % target == 0:
+            return True 
         
 
 

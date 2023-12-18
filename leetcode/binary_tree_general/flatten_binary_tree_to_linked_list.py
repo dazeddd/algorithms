@@ -19,15 +19,5 @@ class Solution:
         if not root :
             return
         
-        currenct_node = root
-        # node_stack += [currenct_node.left, currenct_node.rigth]
-
-        # for node in node_stack:
-
-        # if currenct_node.left:
-        #     currenct_node.right = currenct_node
-
-        # right_node = currenct_node.right
-
 
         
