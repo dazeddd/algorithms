@@ -10,13 +10,21 @@ def solution(N):
 
     factors = []
     for i in range(N):
-        if N % (i+1) == 0:
-            factors.append(i+1)
+
+        if (N % (i+1) == 0) and (i+1 in factors):
+            break
+
+        if (N % (i+1) == 0):
+            if i+1 == N//(i+1):
+                factors.append(i+1)
+            else:
+                factors.append(i+1)
+                factors.append(N//(i+1))
         else:
             continue
+
     # print(factors)
-    
     return len(factors)
 
 if __name__ == "__main__":
-    solution(N=24)
+    solution(N=25)
