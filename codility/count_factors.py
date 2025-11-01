@@ -23,8 +23,9 @@ def solution(N):
         else:
             continue
 
-    # print(factors)
+    print(factors)
     return len(factors)
 
 if __name__ == "__main__":
-    solution(N=25)
+    solution(N=13)
+    # solution(N=25)
