@@ -5,7 +5,10 @@ def solution(A, K):
     for i in range(0, K): 
         if A == []: 
             return A 
+        
+        # inplace
         A.insert(0, A.pop()) 
+        # A[-1]
     return A 
 
 if __name__ == "__main__":
