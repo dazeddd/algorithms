@@ -6,6 +6,7 @@ class Solution:
         start = 0
         end = len(height) - 1
 
+        # two pointer approach
         while start < end:
             width = end - start
             max_area = max(max_area, min(height[start], height[end])*width)
