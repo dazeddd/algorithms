@@ -6,11 +6,9 @@ class TreeNode:
         self.left = left
         self.right = right
 
-# https://www.algodale.com/problems/invert-binary-tree/
+# recursion approach
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-
-        # using recursion
         if not root:
             return
 
