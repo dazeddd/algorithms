@@ -10,8 +10,8 @@ class Solution:
             first_char_map[pair[0]].append(pair[1])
             second_char_map[pair[1]].append(pair[0])
 
-        print(first_char_map)
-        print(second_char_map)
+        # print(first_char_map)
+        # print(second_char_map)
 
         for value in first_char_map.values():
             if len(set(value)) != 1:
@@ -25,6 +25,7 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    answer = sol.isIsomorphic(s="foo", t="bar")
+    # answer = sol.isIsomorphic(s="foo", t="bar")
     # answer = sol.isIsomorphic(s="badc", t="baba")
+    answer = sol.isIsomorphic(s="egg", t="add")
     print(answer)

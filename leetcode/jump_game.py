@@ -3,13 +3,25 @@ from typing import List
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
 
-        target = len(nums) - 1
+        target_idx = len(nums)-1
+        current_idx = 0
+        # for idx in range(len(nums)):
+        #     nums[idx]
 
-        moved_index_sum = 0
+        for idx in range(nums[current_idx]):
+            idx
 
-        if moved_index_sum % target == 0:
-            return True 
+        # target = len(nums) - 1
+
+        # moved_index_sum = 0
+        # if moved_index_sum % target == 0:
+        #     return True 
         
+        # each element in the array represents your maximum jump length
+        
+if __name__ == "__main__":
+    sol = Solution()
+    answer = sol.canJump(nums=[2,3,1,1,4])
 
 
 
