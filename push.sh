@@ -1,5 +1,5 @@
 git add .
 
-echo $*
-git commit -m '$*'
+# echo "$*"
+git commit -m "$*"
 git push origin main
