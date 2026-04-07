@@ -23,7 +23,7 @@ class Solution:
     
 if __name__ == "__main__":
     sol = Solution()
-    result = sol.reverse(x=123)
+    # result = sol.reverse(x=123)
     # result = sol.reverse(x=120)
-    # result = sol.reverse(x=-123)
+    result = sol.reverse(x=-123)
     print(result)
